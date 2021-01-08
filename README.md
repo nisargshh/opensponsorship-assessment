@@ -58,3 +58,9 @@ git clone https://github.com/nisargshh/opensponsorship-assessment.git
 ```sh
 npm install
 ```
+
+3. Run the project
+
+```sh
+npm run dev
+```
