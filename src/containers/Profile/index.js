@@ -11,7 +11,7 @@ function Profile(props) {
 
    //Get the data from the express server
    useEffect(() => {
-      axios.get('http://localhost:8080/' + params.id)
+      axios.post('http://localhost:3001/' + params.id)
          .then(function (res) {
 
             setPlayer(res.data)

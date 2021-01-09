@@ -61,7 +61,7 @@ function PlayerList(props) {
    const [players, setPlayers] = useState([]);
 
    useEffect(() => {
-      axios.get('http://localhost:8080/playerlist')
+      axios.get('http://localhost:3001/playerlist')
          .then(function (res) {
             // handle success
             for (var key in res.data) {

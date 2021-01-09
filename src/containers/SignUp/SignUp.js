@@ -65,7 +65,7 @@ const SignUp = () => {
 
    const submit = () => {
       console.log(player)
-      axios.post('http://localhost:8080/player', player)
+      axios.post('http://localhost:3001/player', player)
          .then(res => {
             message.success('Success!');
             history.push("/");

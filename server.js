@@ -60,9 +60,9 @@ app.get("/playerlist", async (req, res) => {
   });
 });
 
-app.get("/:id", async (req, res) => {
+app.post("/:id", async (req, res) => {
   const player = await Player.findOne({ _id: req.params.id })
   res.send(player)
 });
 
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 3001);
